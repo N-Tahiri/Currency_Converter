@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Currency converter",
+  "version": "1.0",
+  "action": {
+    "default_icon": "icon.png",
+    "default_popup": "index.html"
+  },
+  "description": "The extension converts the given currency into USD",
+  "author": "TN"
+}

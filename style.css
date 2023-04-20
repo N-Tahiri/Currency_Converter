@@ -1,0 +1,84 @@
+body {
+  text-align: center;
+  background-color: #f1f1f1;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("./img/currency.png");
+}
+
+.container {
+  max-width: 600px;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  /* to be added later */
+  /* background-image: url("./img/smallBackground.png");
+  background-position: left;
+  background-size: auto;
+  background-repeat: no-repeat; */
+}
+
+#title {
+  font-size: 2.5rem;
+  margin-top: 1.5rem;
+}
+
+#amount {
+  width: auto;
+}
+
+#amount,
+#currency {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  margin: 1rem;
+  font-size: 1.25rem;
+  box-shadow: 0 0 0 2px #f1f1f1;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+#currency {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* add a small arrow without uploading it to the img folder. */
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  background-size: 1.5rem;
+  width: 100px;
+}
+
+#convert {
+  background-color: #0077ff;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  margin: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.2s ease-in-out;
+}
+
+#result {
+  font-weight: normal;
+  /* font-size: 2rem; */
+  /* margin: 2rem; */
+}
+
+/* Effects */
+#amount:focus,
+#currency:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #0077ff;
+}
+
+#convert:hover {
+  background-color: #0066cc;
+}
